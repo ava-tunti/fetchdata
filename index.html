@@ -8,6 +8,46 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+                    .container {
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            .card {
+              background-color: orange;
+              color: yellow;
+            }
+            
+            .card-title {
+              color: yellow;
+            }
+            
+            .btn-primary {
+              background-color: yellow;
+              color: orange;
+            }
+            
+            .pagination {
+              display: flex;
+              justify-content: center;
+              list-style: none;
+            }
+            
+            .page-item {
+              margin: 0 5px;
+            }
+            
+            .page-item a {
+              color: orange;
+            }
+            
+            .page-item.active a {
+              color: yellow;
+            }
+
+    </style>
 </head>
 
 <body>
@@ -22,6 +62,7 @@
 
     <!-- We will put our React component inside this div. -->
     <div id="root"></div>
+    
 
     <!-- Load React. -->
     <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>

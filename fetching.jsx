@@ -5,13 +5,7 @@ const Pagination = ({ items, pageSize, onPageChange }) => {
     return null;
   }
 
-  let num = <input
-        type="number"
-        value={pageSize}
-        onChange={handlePageSizeChange}
-        placeholder="Enter number of links per page"
-        id="num"
-      />; // Math.ceil(items.length / pageSize);
+  let num = document.getElementById("num"); // Math.ceil(items.length / pageSize);
   let pages = range(1, num + 1);
   const list = pages.map((page) => {
     return (

@@ -1,4 +1,4 @@
-<!-- <html>
+<!-- <!-- <html>
 
 <head>
     <meta charset="UTF-8" />
@@ -101,5 +101,70 @@
     <script type="text/babel">
         // Your React code here
     </script>
+</body>
+</html>
+
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: orange;
+            color: yellow;
+        }
+
+        .card-title {
+            color: yellow;
+        }
+
+        .btn-primary {
+            background-color: yellow;
+            color: orange;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .page-item {
+            margin: 0 5px;
+        }
+
+        .page-item a {
+            color: orange;
+        }
+
+        .page-item.active a {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Include React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Include Babel for JSX parsing -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Include Axios from CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Include your React component script -->
+    <script src="fetching.jsx" type="text/babel"></script>
 </body>
 </html>

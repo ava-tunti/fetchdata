@@ -355,7 +355,7 @@ const Pagination = ({ items, pageSize, onPageChange }) => {
     return null;
   }
 
-  let num = Math.ceil(items.length / pageSize);
+  let num = num; //Math.ceil(items.length / pageSize);
   let pages = range(1, num + 1);
   const list = pages.map((page) => {
     return (
@@ -421,6 +421,7 @@ function App() {
           onChange={handlePageSizeChange}
           placeholder="Enter number of links per page"
           className="form-control mb-4"
+          id="num"
         />
 
         {isLoading ? (

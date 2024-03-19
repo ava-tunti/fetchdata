@@ -5,7 +5,13 @@ const Pagination = ({ items, pageSize, onPageChange }) => {
     return null;
   }
 
-  let num = num; // Math.ceil(items.length / pageSize);
+  let num = <input
+        type="number"
+        value={pageSize}
+        onChange={handlePageSizeChange}
+        placeholder="Enter number of links per page"
+        id="num"
+      />; // Math.ceil(items.length / pageSize);
   let pages = range(1, num + 1);
   const list = pages.map((page) => {
     return (
@@ -64,13 +70,7 @@ function App() {
   return (
     <Fragment>
       {/* Input field for page size with placeholder */}
-      <input
-        type="number"
-        value={pageSize}
-        onChange={handlePageSizeChange}
-        placeholder="Enter number of links per page"
-        id="num"
-      />
+      
 
       {isLoading ? (
         <div>Loading ...</div>
